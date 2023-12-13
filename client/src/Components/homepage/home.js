@@ -10,15 +10,15 @@ function Home() {
   const [Edituserhiden, SetEdituserhiden] = useState(false);
   const [tempId, setTempId] = useState();
   const [state, setState] = useState([]);
-
+  
   const appStyle = {
-    backgroundImage:
-      'url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg")',
-    backgroundSize: "157% ",
+    backgroundImage: 'url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg")',
+    backgroundSize: "cover",  // Use 'cover' to make the image cover the entire container
     backgroundRepeat: "no-repeat",
     height: "100vh",
     fontFamily: "'Numans', sans-serif",
   };
+  
 
   async function getdata() {
     let data = await axios.get("/user/getall");

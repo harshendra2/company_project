@@ -31,13 +31,13 @@ function Register() {
   };
 
   const appStyle = {
-    backgroundImage:
-      'url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg")',
-    backgroundSize: "157% ",
+    backgroundImage: 'url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg")',
+    backgroundSize: "cover",  // Use 'cover' to make the image cover the entire container
     backgroundRepeat: "no-repeat",
     height: "100vh",
     fontFamily: "'Numans', sans-serif",
   };
+  
 
   return (
     <div className="" style={appStyle}>

@@ -32,18 +32,18 @@ function Login() {
   };
 
   const appStyle = {
-    backgroundImage:
-      'url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg")',
-    backgroundSize: "157% ",
+    backgroundImage: 'url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg")',
+    backgroundSize: "cover",  // Use 'cover' to make the image cover the entire container
     backgroundRepeat: "no-repeat",
     height: "100vh",
     fontFamily: "'Numans', sans-serif",
   };
+  
 
   return (
     <div className="" style={appStyle}>
-      <div className="d-flex justify-content-center h-100">
-        <div className="card">
+      <div className="d-flex justify-content-center h-100 ">
+        <div className="card" >
           <div className="card-header">
             <h3>Sign In</h3>
             <div className="d-flex justify-content-end social_icon">
